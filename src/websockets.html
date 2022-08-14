@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>FNIaT</title>
+    <style type="text/css">
+      html {
+        text-align: center;
+        font-size: 16px;
+      }
+      div {
+        padding: 1rem;
+      }
+      #input {
+        font-size: 16px;
+      }
+      p {
+          font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Go websockets tasks</h1>
+
+      <p>First task</p>
+      <form action="#" onsubmit="return taskOne()">
+        <input id="inputTaskOne" type="text" size="40" />
+        <button>Send</button>
+      </form>
+      <p>Second task</p>
+      <form action="#" onsubmit="return taskTwo()">
+        <input id="inputTaskTwoF" type="text" size="40" />
+        <input id="inputTaskTwoS" type="text" size="40" />
+        <button>Send</button>
+      </form>
+      <p>Third task</p>
+      <p>Available commands:</p>
+      <p>0 - do task 3.1</p>
+      <p>1 - do task 3.2</p>
+      <p>3 - do task 3.3</p>
+      <form action="#" onsubmit="return taskThree()">
+        <input id="inputTaskThree" type="text" size="40" />
+        <button>Send</button>
+      </form>
+      <pre id="output"></pre>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
